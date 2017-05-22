@@ -166,7 +166,7 @@ body {
   height: 500px; }
 
 .no-flexbox .content--main {
-  padding: 0 70px;
+  padding: 0 70px !important;
   right: 70px; }
 
 /* Import View Styles */
@@ -188,6 +188,7 @@ body {
     display: flex;
     display: -ms-flexbox;
     margin-bottom: 24px;
+    overflow: hidden;
     width: 100%; }
     .content--main-step .step-heading figure {
       float: left;
