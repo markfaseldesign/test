@@ -196,12 +196,12 @@ body {
 		}
 	}
 }
-&.no-flexbox {
+.no-flexbox {
 	.content--navigation {
 		height: 500px;
 	}
 	.content--main { 
-		margin-left: -33.333%;
-		left: 70px;
+		padding: 0 70px;
+		right: 70px;
 	}
 }

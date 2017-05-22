@@ -76,7 +76,8 @@ body {
     width: 66.666%;
     margin-left: 33.333%;
     margin-left: calc(33.333% + 70px);
-    margin-right: 70px; }
+    margin-right: 70px;
+    position: relative; }
   #content .content--navigation {
     background: #ebeced;
     background: -moz-linear-gradient(left, #ebeced 0%, #ebeced 90%, #d1d5d6 100%);
@@ -161,6 +162,13 @@ body {
         #content .content--navigation ul li.active.active--step7 .nav-icon--step7 {
           background-position: 0 -325px; }
 
+.no-flexbox .content--navigation {
+  height: 500px; }
+
+.no-flexbox .content--main {
+  padding: 0 70px;
+  right: 70px; }
+
 /* Import View Styles */
 /* Homepage Styles */
 .content--main {
@@ -176,8 +184,11 @@ body {
     top: -500px;
     opacity: 0; }
   .content--main-step .step-heading {
+    display: block;
     display: flex;
-    margin-bottom: 24px; }
+    display: -ms-flexbox;
+    margin-bottom: 24px;
+    width: 100%; }
     .content--main-step .step-heading figure {
       float: left;
       width: 77px;
