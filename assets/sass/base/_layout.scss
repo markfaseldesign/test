@@ -199,9 +199,11 @@ body {
 .no-flexbox {
 	.content--navigation {
 		height: 500px;
+		position: relative!important;
 	}
 	.content--main { 
-		padding: 0 70px!important;
-		right: 70px;
+		margin-left: 70px!important;
+		height: 400px!important;
+		width: calc(66.666% - 140px)!important;
 	}
 }

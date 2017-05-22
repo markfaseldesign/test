@@ -163,11 +163,13 @@ body {
           background-position: 0 -325px; }
 
 .no-flexbox .content--navigation {
-  height: 500px; }
+  height: 500px;
+  position: relative !important; }
 
 .no-flexbox .content--main {
-  padding: 0 70px !important;
-  right: 70px; }
+  margin-left: 70px !important;
+  height: 400px !important;
+  width: calc(66.666% - 140px) !important; }
 
 /* Import View Styles */
 /* Homepage Styles */
