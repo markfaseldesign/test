@@ -196,10 +196,12 @@ body {
 		}
 	}
 }
+// Support for ie 9 / browsers the don't support CSS3
 .no-flexbox {
 	.content--navigation {
 		height: 500px;
 		position: relative!important;
+		top: 0!important;
 	}
 	.content--main { 
 		margin-left: 70px!important;
