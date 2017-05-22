@@ -209,3 +209,16 @@ body {
 		width: calc(66.666% - 140px)!important;
 	}
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* IE10-specific styles go here */  
+   .content--navigation {
+		height: 500px;
+		position: relative!important;
+		top: 0!important;
+	}
+	.content--main { 
+		margin-left: 70px!important;
+		height: 400px!important;
+		width: calc(66.666% - 140px)!important;
+	}
+}
