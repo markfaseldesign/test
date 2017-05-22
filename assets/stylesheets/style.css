@@ -57,9 +57,10 @@ body {
           display: block; }
 
 #content {
-  display: table-cell;
+  display: block;
   display: flex;
   display: -ms-flexbox;
+  overflow: hidden;
   padding-top: 60px;
   position: relative;
   /**
@@ -73,6 +74,7 @@ body {
     height: 500px;
     order: 2;
     width: 66.666%;
+    margin-left: 33.333%;
     margin-left: calc(33.333% + 70px);
     margin-right: 70px; }
   #content .content--navigation {

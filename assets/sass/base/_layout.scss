@@ -45,9 +45,10 @@ body {
 	}
 }
 #content {
-	display: table-cell;
+	display: block;
 	display: flex; //Current browsers (IE11, Chrome, etc)
     display: -ms-flexbox; //IE10 implementation
+    overflow: hidden;
 	padding-top: 60px;
 	position: relative;
 	
@@ -59,8 +60,10 @@ body {
 		height: 500px;
 		order: 2;
 		width: 66.666%;
+		margin-left: 33.333%;
 		margin-left: calc(33.333% + 70px);
 		margin-right: 70px;
+		position: relative;
 	}
 	
 	/**
@@ -191,5 +194,14 @@ body {
 				}
 			}
 		}
+	}
+}
+&.no-flexbox {
+	.content--navigation {
+		height: 500px;
+	}
+	.content--main { 
+		margin-left: -33.333%;
+		left: 70px;
 	}
 }
